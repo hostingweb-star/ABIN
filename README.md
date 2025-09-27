@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Galaxy Theme</title>
+  <style>
+    :root{
+      --bg1: #020615;
+      --bg2: #06142a;
+      --accent: #6ea8ff;
+      --card-glow: rgba(110,168,255,0.12);
+      --text: #e9f0ff;
+      --muted: #b6c7e6;
+      --pink: #ff8ec0;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(ellipse at top left, var(--bg2) 0%, var(--bg1) 60%);
+      color:var(--text);
+      padding:20px;
+      line-height:1.5;
+    }
+    .stars::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background-image: radial-gradient(1px 1px at 10% 20%, #fff44 60%, transparent 61%),
+                        radial-gradient(1px 1px at 40% 10%, #fff 60%, transparent 61%),
+                        radial-gradient(1px 1px at 80% 40%, #fff 60%, transparent 61%),
+                        radial-gradient(1px 1px at 30% 80%, #fff 60%, transparent 61%);
+      opacity:0.06;
+      pointer-events:none;
+      z-index:0;
+    }
+    .container{
+      max-width:800px;
+      margin:0 auto;
+      position:relative;
+      z-index:1;
+    }
+    .profile{
+      text-align:center;
+      background:linear-gradient(180deg, rgba(252, 219, 135, 0.473), rgba(57, 57, 57, 0.01));
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(2,6,21,0.6);
+      border:1px solid rgba(255,255,255,0.04);
+      margin-bottom:20px;
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 14px;
+      border:3px solid rgba(110,168,255,0.18);
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .name{font-size:22px;font-weight:700;margin-bottom:6px}
+    .role{color:var(--muted);font-size:14px;margin-bottom:10px}
+    .bio{font-size:14px;color:var(--muted);margin-bottom:14px}
+    .post{
+      background:linear-gradient(180deg, rgba(252, 219, 135, 0.268), rgba(72, 72, 72, 0.625));
+      border-radius:12px;
+      padding:16px;
+      border:1px solid rgba(255,255,255,0.03);
+      margin-bottom:18px;
+    }
+    .post h3{margin-bottom:8px;font-size:18px;border-left: 10px solid #ffffff;padding-left: 10px;}
+    .post p{font-size:14px;color:var(--muted)}
+    footer{margin-top:20px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body class="stars">
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">
+        <img src="pict1.jpg" alt="Foto Pembuat">
+      </div>
+      <div class="name">AHMAD SYARBINI SYAHBAN</div>
+      <div class="role">Mahasiswa Teknik Informatika UBP</div>
+      <div class="role">NIM : 24416255201073</div>
+      <div class="bio">Blog Basis Data</div>    
+    </div>
+
+    <div class="post">
+      <h3>Post 1: Harapan terhadap MK Basis Data</h3>
+      <p>Saya berharap mata kuliah Basis Data dapat memberi pemahaman mendalam mengenai cara menyimpan, mengelola, dan mengolah data dalam jumlah besar. Selain itu, saya ingin bisa mempraktikkan langsung penggunaan DBMS seperti MySQL atau PostgreSQL, sehingga dapat menghubungkan teori dengan implementasi nyata dalam pengembangan perangkat lunak.</p>
+    </div>
+
+    <div class="post">
+      <h3>Post 2: Apa itu Basis Data?</h3>
+      <p>Basis data adalah sekumpulan data yang terorganisir dan tersimpan secara sistematis, sehingga dapat diakses, dimodifikasi, dan dikelola dengan mudah menggunakan perangkat lunak khusus yang disebut DBMS (Database Management System). Basis data membantu mengurangi duplikasi data, menjaga konsistensi, dan meningkatkan efisiensi dalam pengolahan informasi.</p>
+    </div>
+
+    <div class="post">
+      <h3>Post 3: Apa itu Conceptual DB?</h3>
+      <p>Conceptual DB adalah representasi abstrak dari database yang berfokus pada bagaimana data saling berhubungan secara logis. Model ini biasanya divisualisasikan melalui Entity Relationship Diagram (ERD), yang menampilkan entitas, atribut, dan hubungan antar entitas. Dengan conceptual model, perancang database dapat memahami kebutuhan data tanpa memikirkan aspek teknis penyimpanan terlebih dahulu.</p>
+    </div>
+
+    <div class="post">
+      <h3>Post 4: Apa itu Physical Model?</h3>
+      <p>Physical model adalah tahap detail dari perancangan database yang sudah spesifik terhadap implementasi DBMS tertentu. Model ini menjelaskan bagaimana tabel dibuat, tipe data yang digunakan, struktur indeks, primary key, foreign key, dan cara optimasi penyimpanan. Dengan physical model, database siap diimplementasikan dalam sistem nyata dan digunakan oleh aplikasi.</p>
+    </div>
+
+    <footer>
+      Dibuat untuk tugas Basis Data • ABIN• <a href="https://www.ubpkarawang.ac.id" target="_blank" style="color:rgba(252, 219, 135, 0.473)">UBP Karawang</a>
+    </footer>
+  </div>
+</body>
+</html>
